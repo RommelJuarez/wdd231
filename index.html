@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rommel Juarez wdd231</title>
+
+    <meta name="author" content="Rommel Juarez">
+    <meta name="description" content="wdd231 Home Page Assignment Rommel Juarez">
+
+
+    <title>WDD231 - Home Page - Rommel Juarez</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small-screens.css">
+
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
 </head>
+
 <body>
-    <h1>Rommel Juarez wdd231</h1>
+    <header>
+        <div class="title-container">
+            <img src="images/profilepic.webp" alt="Profile" loading="eager" width="120" height="150">
+            <h1>Rommel A. Juarez</h1>
+        </div>
+        <div class="hm"></div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Chamber</a></li>
+                <li><a href="https://github.com/RommelJuarez?tab=repositories" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/rommel-juarez-b74246217/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <h2>Course Work</h2>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="section2">
+            <h2>Quito, Ecuador</h2>
+            <figure>
+                <img src="images/quito-postal.webp" alt="quito postal" loading="lazy" width="250" height="150">
+                <figcaption>Panecillo Quito-Ecuador.</figcaption>
+            </figure>
+        </section>
+
+        <section class="section3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button data-filter="all">All</button>
+                <button data-filter="CSE">CSE</button>
+                <button data-filter="WDD">WDD</button>
+            </div>
+            <div class="classes"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>

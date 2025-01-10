@@ -1,0 +1,190 @@
+:root {
+
+    --primary-color: #004080;
+    --secondary-color: #000;
+    --hover-color: yellow;
+    --text-color: #fff;
+    --background-color: #fff;
+    --button-bg-color: black;
+    --button-hover-bg-color: #262626;
+    --link-bg-color: rgb(88, 88, 88);
+
+   
+    --font-family: 'Roboto', sans-serif;
+
+   
+    --header-height: 11em;
+    --gap: 4%;
+    --padding: 2%;
+    --main-margin: 3% 10%;
+    --card-margin: 10px;
+    --card-border-radius: 10px;
+    --card-shadow: 0px 4px 8px rgba(0, 0, 0, 0.97);
+    --button-padding: 5px;
+    --button-radius: 5px;
+    --grid-gap: 10px;
+    --filter-border: 1px solid black;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0 auto;
+}
+
+.title-container {
+    display: flex;
+    background-color: var(--primary-color);
+    height: var(--header-height);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    padding: var(--padding);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+}
+
+.title-container img {
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: var(--secondary-color);
+}
+
+.nav-bar ul li {
+    flex: 1 1 100%;
+}
+
+.nav-bar a:hover {
+    color: var(--hover-color);
+}
+
+.nav-bar a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: var(--main-margin);
+    gap: var(--grid-gap);
+}
+
+.section1,
+.section2,
+.section3 {
+    background-color: var(--background-color);
+    margin: var(--card-margin);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    color: var(--text-color);
+    text-align: center;
+    box-shadow: var(--card-shadow);
+}
+
+section ul {
+    color: black;
+    text-align: left;
+    padding: 7%;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+    
+
+.section2 {
+    height: 300px;
+    align-items: center;
+}
+
+section figure {
+    padding: 20px;
+    color: black;
+}
+
+.section3 {
+    grid-column: 1 / 3;
+}
+
+.filter-buttons {
+    padding: 10px;
+    display: block;
+    justify-content: center;
+    gap: var(--grid-gap);
+    border: var(--filter-border);
+}
+
+.filter-buttons button {
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    width: 8em;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+}
+
+.filter-buttons button:hover {
+    color: var(--hover-color);
+}
+
+.classes {
+    padding: 20px;
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.classes a {
+    text-decoration-style: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--link-bg-color);
+    padding: 1rem;
+    border-radius: var(--button-radius);
+    color: var(--text-color);
+}
+
+.classes a:hover {
+    background-color: var(--button-hover-bg-color);
+}
+.classes .completed {
+    background-color: rgb(3, 89, 3);
+    font-weight: bold;
+}
+.classes .completed:hover {
+    background-color: rgb(5, 195, 5);
+    font-weight: bold;
+}
+.total-credits{
+    color: #000;
+}
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+

@@ -1,0 +1,40 @@
+@media (max-width: 965px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .section3 {
+        grid-column: auto;
+    }
+    .nav-bar::before{
+        content: '\2630';
+        text-align: end;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 0 4%;
+       align-content: center;
+       
+
+    }
+    .nav-bar.show::before {
+        content: "X";
+        background-color: black;
+       color: #fff;
+
+    }
+    .nav-bar ul {
+        display: none;
+        
+    }
+    .nav-bar.show ul{
+        display: block;
+        padding: 0;
+       
+    }
+    .classes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
