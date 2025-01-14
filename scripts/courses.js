@@ -95,10 +95,10 @@ function renderCourses(filter) {
         classesContainer.appendChild(courseElement);
     });
     const totalCredits = courses
-    .filter(course => course.completed) // Filtrar los cursos completados
-    .reduce((sum, course) => sum + course.credits, 0); // Sumar los créditos
+    .filter(course => course.completed) 
+    .reduce((sum, course) => sum + course.credits, 0);
 
-// Crear o actualizar el elemento <p> con el total de créditos
+
 let totalCreditsElement = document.querySelector('.total-credits');
 if (!totalCreditsElement) {
     totalCreditsElement = document.createElement('p');
