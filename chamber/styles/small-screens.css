@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hm::before{
+        display: block;
+        content: '\2630';
+        text-align: end;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 0 4%;
+       align-content: center;
+       z-index: 10000;
+       
+
+    }
+    .hm.show::before {
+        content: "X";
+        background-color: white;
+       color: #000000;
+
+    }
+    .nav-buttons  {
+        display: none;
+        
+    }
+    .nav-buttons.show {
+        display: block;
+        padding: 0;
+        
+        
+       
+    }
+    .nav-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .business-card {
+        padding: 10px;
+    }
+}

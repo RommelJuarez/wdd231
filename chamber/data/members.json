@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Kambu Drinks",
+        "address": "Machachi, Ecuador",
+        "phone": "+593 123456789",
+        "website": "",
+        "icon": "images/kambu.png",
+        "membershipLevel": 3,
+        "description": "Kambu Drinks specializes in natural and organic beverages sourced locally from Ecuador."
+    },
+    {
+        "name": "La Fabril",
+        "address": "Quito, Ecuador",
+        "phone": "+593 2 299 6000",
+        "website": "",
+        "icon": "images/fabril.png",
+        "membershipLevel": 1,
+        "description": "La Fabril is one of Ecuador's leading companies in the production of edible oils, fats, and other food products."
+    },
+    {
+        "name": "Comercial Kley",
+        "address": "Quito, Ecuador",
+        "phone": "+593 2 257 1800",
+        "website": "",
+        "icon": "images/comercialkley.png",
+        "membershipLevel": 2,
+        "description": "Comercial Kley is a well-established company in the wholesale distribution of building materials and hardware in Ecuador."
+    },
+    {
+        "name": "Fertec",
+        "address": "Quito, Ecuador",
+        "phone": "+593 2 246 5050",
+        "website": "",
+        "icon": "images/fertec.png",
+        "membershipLevel": 2,
+        "description": "Fertec is a company dedicated to the distribution of fertilizers and agricultural supplies, supporting the local farming industry."
+    },
+    {
+        "name": "Produbanco",
+        "address": "Quito, Ecuador",
+        "phone": "+593 2 397 0500",
+        "website": "",
+        "icon": "images/produbanco.png",
+        "membershipLevel": 3,
+        "description": "Produbanco is a leading financial institution in Ecuador, offering a variety of banking services to businesses and individuals."
+    },
+    {
+        "name": "Corporación Favorita",
+        "address": "Quito, Ecuador",
+        "phone": "+593 2 244 3030",
+        "website": "",
+        "icon": "images/corporacionfavorita.png",
+        "membershipLevel": 3,
+        "description": "Corporación Favorita is a prominent retail conglomerate in Ecuador, operating major supermarket chains and retail businesses."
+    },
+    {
+        "name": "Banco Pichincha",
+        "address": "Quito, Ecuador",
+        "phone": "+593 2 397 0500",
+        "website": "",
+        "icon": "images/bancopichincha.png",
+        "membershipLevel": 3,
+        "description": "Banco Pichincha is a leading financial institution in Ecuador, offering a variety of banking services to businesses and individuals."
+    }
+]

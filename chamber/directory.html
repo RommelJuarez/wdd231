@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Rommel Juarez">
+    <meta name="description" content="Directory Page of Quito Chamber of Comerce">
+
+    <meta property="og:title" content="Directory Page of Quito Chamber of Comerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.app.goo.gl/iwz8UbVuhQFmAHnv5">
+    <meta property="og:url" content="https://rommeljuarez.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Welcome to the Directory Page of Quito Chamber of Commerce">
+
+    <title>Directory - Quito CC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small-screens.css">
+
+    <script src="scripts/displaydata.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-social">
+            <div class="header-social-links">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"
+                        width="30" height="30"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram"
+                        width="30" height="30"></a>
+                <a href="https://x.com/?lang=es&mx=2" target="_blank"><img src="images/twitter.png" alt="X - twitter"
+                        width="30" height="30"></a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Logo Quito Chamber of Commerce" loading="eager" width="100"
+                        height="100"></a>
+                <a href="#"><span id="logo-span">Quito Chamber of Commerce</span></a>
+
+            </div>
+            <div class="hm"></div>
+            <ul class="nav-buttons">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <button id="toggle-view-btn">Toggle View</button>
+        <section class="main-container">
+        <div class="bussiness-list" id="business-list"></div>
+
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p id="footer-title">Quito Chamber of Commerce</p>
+            <p>Quito-Ecuador</p>
+            <p>info@quitocc.org</p>
+            <p>+593 995168019</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" width="30"
+                    height="30"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram"
+                    width="30" height="30"></a>
+            <a href="https://x.com/?lang=es&mx=2" target="_blank"><img src="images/twitter.png" alt="X - twitter"
+                    width="30" height="30"></a>
+        </div>
+        <div class="footer-description">
+            <p>WDD231 Class Project</p>
+            <p><span id="currentyear"></span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
