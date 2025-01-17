@@ -142,24 +142,28 @@ footer img {
 footer img:hover {
     transform: scale(1.2);
 }
-main{
+
+main {
     text-align: center;
 }
+
 .bussiness-list {
-    margin: 0 10% ;
+    margin: 0 10%;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 20px;
 }
-.main-container{
+
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .bussiness-list.list-view {
     display: table;
-    
+
     border-collapse: collapse;
 }
 
@@ -216,4 +220,3 @@ main{
 #toggle-view-btn:focus {
     outline: none;
 }
-
