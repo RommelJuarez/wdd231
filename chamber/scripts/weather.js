@@ -2,7 +2,8 @@
 let currentCoords = { lat: -0.224043, lng: -78.512833 };
 let apiKey = "01c3341a6290780238f6a88215965a37";
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${currentCoords.lat}&lon=${currentCoords.lng}&appid=${apiKey}&units=imperial`;
-
+const cnt=3;
+const urlForecast=`https://api.openweathermap.org/data/2.5/forecast?lat=${currentCoords.lat}&lon=${currentCoords.lng}&appid=${apiKey}&units=imperial`;
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -19,7 +20,36 @@ async function apiFetch() {
     }
 
 }
+async function apiFetchForecast() {
+    try {
+        const response = await fetch(urlForecast);
+        if (response.ok) {
+            const data = await response.json();
 
+            console.log(data);
+            displayForecast(data);
+            
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+
+}
+function displayForecast(data) {
+    const tomorrowForecast = document.querySelector("#tomorrow-forecast");
+    const afterTomorrowForecast = document.querySelector("#after-tomorrow-forecast");
+    const afterAfterTomorrowForecast = document.querySelector("#after-after-tomorrow-forecast");
+
+   
+    const forecast = data.list.slice(0, 3);
+
+   
+    tomorrowForecast.textContent = `Tomorrow: ${forecast[0].main.temp} °F`; 
+    afterTomorrowForecast.textContent = `Day After Tomorrow: ${forecast[1].main.temp} °F`;
+    afterAfterTomorrowForecast.textContent = `In 3 Days: ${forecast[2].main.temp} °F`;
+}
 function displayData(data) {
     
     const temperature = document.querySelector("#temperature");
@@ -61,3 +91,4 @@ function displayData(data) {
 
 
 apiFetch();
+apiFetchForecast();
