@@ -8,14 +8,15 @@ const lastModified = document.lastModified;
 lastModifiedElement.textContent = `${lastModified}`;
 
 
-const businessListDiv = document.querySelector('#business-list');
+const businessListDiv = document.querySelector('#business-list-home');
 const toggleViewButton = document.getElementById('toggle-view-btn');
 
 
 function renderBusinesses(businesses) {
     businessListDiv.innerHTML = '';
-
-    businesses.forEach(business => {
+    const shuffledBusinesses = businesses.sort(() => 0.5 - Math.random());
+    const selectedBusinesses = shuffledBusinesses.slice(0, 3);
+    selectedBusinesses.forEach(business => {
         const card = document.createElement('div');
         card.classList.add('business-card');
 
@@ -26,16 +27,9 @@ function renderBusinesses(businesses) {
             <p><strong>Address:</strong> ${business.address}</p>
             <p><strong>Phone:</strong> ${business.phone}</p>
         `;
-
         businessListDiv.appendChild(card);
     });
 }
-
-
-toggleViewButton.addEventListener('click', () => {
-    businessListDiv.classList.toggle('list-view');
-});
-
 
 async function fetchBusinesses() {
     try {
@@ -52,3 +46,4 @@ async function fetchBusinesses() {
 
 
 fetchBusinesses();
+

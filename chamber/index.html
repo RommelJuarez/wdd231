@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="Rommel Juarez">
-    <meta name="description" content="Directory Page of Quito Chamber of Comerce">
+    <meta name="description" content="Home Page of Quito Chamber of Comerce">
 
-    <meta property="og:title" content="Directory Page of Quito Chamber of Comerce">
+    <meta property="og:title" content="Home Page of Quito Chamber of Comerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.app.goo.gl/iwz8UbVuhQFmAHnv5">
     <meta property="og:url" content="https://rommeljuarez.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Welcome to the Directory Page of Quito Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the Home Page of Quito Chamber of Commerce">
 
-    <title>Quito Chamber of Commerce - Business Directory Page</title>
+    <title>Quito Chamber of Commerce - Home Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +24,12 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small-screens.css">
+    <link rel="stylesheet" href="styles/index.css">
 
-    <script src="scripts/displaydata.js" defer></script>
+
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/home-display.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -50,8 +53,8 @@
             </div>
             <div class="hm"></div>
             <ul class="nav-buttons">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active">Directory</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
@@ -59,11 +62,58 @@
     </header>
 
     <main>
-        <h1>Business Directory</h1>
-        <button id="toggle-view-btn">Toggle View</button>
 
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/hero.jpeg" alt="San Francisco portrait for Quito Chamber Commerce" loading="eager">
+                <div class="hero-content">
+                    <h1>Quito Chamber of Commerce</h1>
+
+                    <a href="#" class="hero-button">Join Us</a>
+                </div>
+            </div>
+
+        </section>
+
+        <h2>Home</h2>
+        <section class="main-content">
+
+
+            <div class="events-card">
+                <h2>Events</h2>
+                <div class="events-content">
+                </div>
+            </div>
+
+            <div class="current-weather-card">
+                <h3>Current Weather</h3>
+                <p id="temperature"></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p id="weather"></p>
+
+                <ul>
+                    
+                    <li id="sunrise"></li>
+                    <li id="sunset"></li>
+                </ul>
+            </div>
+            <div class="weather-forecast-card">
+                <h3>Weather Forecast</h3>
+                <ul>
+                    <li id="high-temperature"></li>
+                    <li id="low-temperature"></li>
+                    <li id="humidity"> </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Business Cards Section -->
         <section class="main-container">
-            <div class="bussiness-list" id="business-list"></div>
+            <div class="bussiness-list" id="business-list-home"></div>
         </section>
     </main>
 

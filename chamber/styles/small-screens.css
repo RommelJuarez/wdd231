@@ -16,23 +16,37 @@
 
 
     }
-
+    .hm {
+        width: 100%;
+        
+      
+    }
+    
+    
     .hm.show::before {
         content: "X";
         background-color: white;
         color: #000000;
+        font-size: 2.2em;  
 
     }
-
+   
     .nav-buttons {
-        display: none;
-
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transform: translateY(0px);
+        transition: opacity 0.3s ease-in, max-height 0.3s ease-in-out;
     }
+
+
 
     .nav-buttons.show {
-        display: block;
+        opacity: 1;
+        max-height: 300px;
         padding: 0;
-
+        transform: translateY(0); 
+        overflow: hidden;
 
 
     }
@@ -51,3 +65,4 @@
         padding: 10px;
     }
 }
+

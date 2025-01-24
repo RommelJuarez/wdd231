@@ -1,8 +1,8 @@
 :root {
     --primary-color: #F31D12;
-    --secondary-color: #0E3579;
+    --secondary-color: rgb(13, 0, 255);
     --text-color: #000000;
-    --hover-color: red;
+    --hover-color-nav: red;
     --font-family: 'Roboto', sans-serif;
 }
 
@@ -11,7 +11,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h1{
+    margin-top: 35px;
+}
 body {
     font-family: var(--font-family);
 }
@@ -26,6 +28,8 @@ header {
     display: flex;
     justify-content: flex-end;
     background-color: var(--primary-color);
+    
+    
 }
 
 .header-social img {
@@ -49,6 +53,7 @@ header {
     align-items: center;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 
 .logo {
@@ -81,7 +86,7 @@ header {
 .nav-buttons a {
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 1.2em;
     font-weight: 600;
     text-decoration: none;
     padding: 5px;
@@ -90,8 +95,8 @@ header {
     transition: color 0.3s ease;
 }
 
-.nav-buttons a:hover {
-    color: var(--hover-color);
+.nav-buttons a:hover,.nav-buttons a.active {
+    color: var(--hover-color-nav);
 }
 
 .nav-buttons a::after {
