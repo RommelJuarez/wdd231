@@ -14,8 +14,12 @@ const toggleViewButton = document.getElementById('toggle-view-btn');
 
 function renderBusinesses(businesses) {
     businessListDiv.innerHTML = '';
-    const shuffledBusinesses = businesses.sort(() => 0.5 - Math.random());
+    
+    const filteredBusinesses = businesses.filter(business => business.membershipLevel === 2 || business.membershipLevel === 3);
+    
+    const shuffledBusinesses = filteredBusinesses.sort(() => 0.5 - Math.random());
     const selectedBusinesses = shuffledBusinesses.slice(0, 3);
+    
     selectedBusinesses.forEach(business => {
         const card = document.createElement('div');
         card.classList.add('business-card');
