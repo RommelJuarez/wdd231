@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="styles/joinus.css">
    
 
-    <script src="scripts/footer.js"defer></script>
+    <script src="scripts/footer.js" defer></script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/membership.js" defer></script>
     
@@ -140,6 +140,7 @@
               <label>
                 Membership Level
                 <select name="membershipLevel" required title="Select Your Membership Level">
+                  <option value="" disabled selected>Choose a membership</option>
                   <option value="NP">NP Membership (Non-Profit, No Fee)</option>
                   <option value="Bronze">Bronze Membership</option>
                   <option value="Silver">Silver Membership</option>
@@ -168,6 +169,7 @@
             <div id="silverl-card"></div>
             <div id="bronze-card"></div>
             <div id="nonprofit-card"></div>
+          </div>
         </div>
     
         <dialog id="details">
