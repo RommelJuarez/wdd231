@@ -79,7 +79,8 @@ const courses = [
 ]
 const classesContainer = document.querySelector('.classes');
 const filterButtons = document.querySelectorAll('.filter-buttons button');
-
+const modal=document.querySelector("#details");
+const closeButton=document.querySelector("#closeModal");
 function renderCourses(filter) {
     classesContainer.innerHTML = '';
     const filteredCourses = filter === 'all'
@@ -88,6 +89,12 @@ function renderCourses(filter) {
     filteredCourses.forEach(course => {
         const courseElement = document.createElement('a');
         courseElement.href = '#';
+        courseElement.p
+        courseElement.addEventListener("click",(event)=>{modal.showModal();
+            event.preventDefault();
+            displayModal(course);
+        });
+        
         courseElement.textContent = `${course.subject} ${course.number}`;
         if (course.completed) {
             courseElement.classList.add('completed');
@@ -113,4 +120,29 @@ filterButtons.forEach(button => {
         renderCourses(filter);
     });
 });
+ function displayModal(x){
+    const modalTitle = document.querySelector('#modalTiltle');
+    const courseTitle = document.querySelector('#courseTiltle');
+    const credits = document.querySelector('#credits');
+    const certificate = document.querySelector('#certificate');
+    const modalDescription = document.querySelector('#modalDescription');
+    const modalTech = document.querySelector('#modalTech');
+    const close=document.querySelector('#closeModal');
+
+    modalTitle.innerHTML=`${x.subject} ${x.number}`;
+    courseTitle.innerHTML=x.title;
+    credits.innerHTML=`Credits: ${x.credits}`;
+    certificate.innerHTML=x.certificate;
+    modalDescription.innerHTML=x.description;
+    modalTech.innerHTML=x.technology.map(tech=>` ${tech} `).join('');
+    close.addEventListener('click',()=>{
+        modal.close();
+    });
+
+
+ };
+closeButton.addEventListener("click",()=>{
+    modal.classList.toggle("close");
+});
+
 renderCourses('all');

@@ -1,0 +1,27 @@
+
+.thank-you-container {
+    background: #dbdada;
+    width: 60%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#submission-details {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.detail-item {
+    
+    padding: 6px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+

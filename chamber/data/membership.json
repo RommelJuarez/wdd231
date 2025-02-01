@@ -1,0 +1,35 @@
+{
+    "memberships": [
+      {
+        "level": "Gold",
+        "benefits": [
+          "Special Events",
+          "Exclusive Training",
+          "Spotlight Advertising on Home Page",
+          "Event Discounts"
+        ]
+      },
+      {
+        "level": "Silver",
+        "benefits": [
+          "Special Events",
+          "Training",
+          "Event Discounts"
+        ]
+      },
+      {
+        "level": "Bronze",
+        "benefits": [
+          "Training",
+          "Event Discounts"
+        ]
+      },
+      {
+        "level": "Non-Profit",
+        "benefits": [
+          "Event Discounts"
+        ]
+      }
+    ]
+  }
+  
