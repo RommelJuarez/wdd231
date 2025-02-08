@@ -1,0 +1,28 @@
+@media only screen and (max-width:1150px){ 
+    
+    #cards-container{
+        
+        max-width: 80%;
+        grid-template-columns: 1fr;
+        gap:20px;
+        
+    }
+    .card {
+    
+        grid-template-areas: 
+        "foto title"
+        "foto description" 
+        "foto cost "
+        "foto address"
+        ;
+    }
+
+    .card-img {
+        
+        width: 300px;
+        height: 200px;
+        
+        
+    }
+    
+} 

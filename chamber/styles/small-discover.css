@@ -1,0 +1,26 @@
+@media only screen and (max-width:640px){
+    
+    #cards-container{
+        
+        max-width: 95%;
+        
+    }
+    .card {
+        
+        grid-template-areas: 
+        "title"
+        "foto" 
+        "cost"
+        "description"
+        "address"
+        ;
+    }
+    .card-img {
+        
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    
+}

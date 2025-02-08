@@ -14,7 +14,7 @@
     <meta property="og:url" content="https://rommeljuarez.github.io/wdd231/chamber/directory.html">
     <meta property="og:description" content="Welcome to the Home Page of Quito Chamber of Commerce">
 
-    <title>Quito Chamber of Commerce - Home Page</title>
+    <title>Discover Page - Quito Chamber of Commerce</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,13 +24,15 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small-screens.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/medium-discover.css">
+    <link rel="stylesheet" href="styles/small-discover.css">
 
 
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/home-display.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="scripts/footer.js"defer></script>
+    <script type="module" src="scripts/discover-places.js" defer></script>
+    <script src="scripts/lastvisit.js" defer></script>
 </head>
 
 <body>
@@ -54,70 +56,17 @@
             </div>
             <div class="hm"></div>
             <ul class="nav-buttons">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
-        <section class="hero">
-            <div class="hero-image">
-                <img src="images/hero.jpeg" alt="San Francisco portrait for Quito Chamber Commerce" loading="eager">
-                <div class="hero-content">
-                    <h1>Quito Chamber of Commerce</h1>
-
-                    <a href="join.html" class="hero-button">Join Us</a>
-                </div>
-            </div>
-
-        </section>
-
-        <h2>Home</h2>
-        <section class="main-content">
-
-
-            <div class="events-card">
-                <h2>Events</h2>
-                <div class="events-content">
-                </div>
-            </div>
-
-            <div class="current-weather-card">
-                <h3>Current Weather</h3>
-                <p id="temperature"></p>
-                <figure>
-                    <img id="weather-icon" src="https://openweathermap.org/img/w/02n.png" alt="weather">
-                    <figcaption></figcaption>
-                </figure>
-                <p id="weather"></p>
-
-                <ul>
-                    <li id="high-temperature"></li>
-                    <li id="low-temperature"></li>
-                    <li id="humidity"> </li>
-                    <li id="sunrise"></li>
-                    <li id="sunset"></li>
-                </ul>
-            </div>
-            <div class="weather-forecast-card">
-                <h3>Weather Forecast</h3>
-                <ul>
-                    <li id="tomorrow-forecast"></li>
-                    <li id="after-tomorrow-forecast"></li>
-                    <li id="after-after-tomorrow-forecast"> </li>
-                </ul>
-            </div>
-
-        </section>
-
-        <!-- Business Cards Section -->
-        <section class="main-container">
-            <div class="bussiness-list" id="business-list-home"></div>
-        </section>
+        <h1>Places of Interest</h1>
+        <div id="cards-container"></div>
     </main>
 
     <footer>
