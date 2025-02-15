@@ -1,0 +1,219 @@
+main {
+    
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 100px 0 100px;
+    color: aliceblue;
+}
+
+form {
+    position: relative;
+    width: 50%;
+    
+    padding: 25px;
+    
+    
+    background-color: #32113098;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+#joinh1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    padding-bottom: 4%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+
+
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #5c5c5c;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    resize: none;
+    background-color: #313131;
+    color: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e064d1;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: #a5a3a3;
+    font-size: 12px;
+}
+
+
+input[type="submit"] {
+    font-weight: bold;
+    background-color: #7c1279;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+#joinbutton:focus {
+    background-color: #f9dc3b;
+    color: black;
+}
+
+.form-section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+/* CARDS*/
+.card-container {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    color: #000000;
+}
+
+
+.card-container div {
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+
+#gold-card {
+    background-color: #FFD700;
+    animation-delay: 0.2s;
+}
+
+#silverl-card {
+    background-color: #C0C0C0;
+    animation-delay: 0.4s;
+}
+
+#bronze-card {
+    background-color: #CD7F32;
+    animation-delay: 0.6s;
+}
+
+#nonprofit-card {
+    background-color: #777;
+    animation-delay: 0.8s;
+}
+
+.card-container div h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        width: 93%;
+
+    }
+
+    .card-container div {
+        width: 100%;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 13px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-section {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    
+}
+
+
+@media (max-width: 480px) {
+    form {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

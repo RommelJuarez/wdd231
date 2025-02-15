@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rommel Juarez">
+    <meta name="description" content="Join Page of Savage Beast Workout Planner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Join Page of Savage Beast Workout Planner">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.app.goo.gl/v4Ei5UPvx7Pt2HQ66">
+    <meta property="og:url" content="https://rommeljuarez.github.io/wdd231/savage-beast/index.html">
+    <meta property="og:description" content=" Join us now to Plan your Workouts on Savage Beast">
+
+    <title>Join Us | Savage Beast</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/joinus.css">
+
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/hamburguer.js" defer></script>
+    <script src="scripts/joinusform.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="grid1">
+            <div class="header-container-img">
+
+                <a href="index.html" class="logo-a"><img src="images/logo.png" alt="logo" class="logo"><span>SAVAGE
+                        BEAST</span></a>
+                        <button class="hamburguer-menu" id="button1" title="hamburguer-menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                <div class="navbar" >
+                    <a href="index.html">Home</a>
+                    <a href="planner.html" >Planeer</a>
+                    <a href="joinus.html" class="active">Join Us</a>
+                    <a href="exercises.html">Exercises</a>
+                    <a href="/wdd231/siteplan.html" target="_blank">Site Plan</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="back">
+        <div class="hero-gradient"></div>
+    </div>
+
+   
+    <main>
+        <h1 id="joinh1">Join Us Today:</h1>
+        <div class="form-section">
+          <form action="thankyou.html" method="get" class="joinform">
+            <label>
+                First Name
+                <input type="text" name="firstName" required autocomplete="given-name" title="Your First Name">
+              </label>
+              <br>
+            
+              <!-- Applicant's Last Name -->
+              <label>
+                Last Name
+                <input type="text" name="lastName" required autocomplete="family-name" title="Your Last Name">
+              </label>
+              <br>
+            
+              
+            
+              <!-- Email Address -->
+              <label>
+                Email Address
+                <input 
+                  type="email" 
+                  name="email" 
+                  required 
+                  autocomplete="email" 
+                  title="Your Email Address" 
+                  placeholder="example@domain.com">
+              </label>
+              <br>
+            
+              <!-- Mobile Phone Number -->
+              <label>
+                Mobile Phone Number
+                <input 
+                  type="tel" 
+                  name="phone" 
+                  required 
+                  autocomplete="tel" 
+                  pattern="^\+?[0-9\s\-]{7,15}$" 
+                  title="Your Mobile Phone Number"
+                  placeholder="0991237890">
+                  
+              </label>
+              <br>
+            
+              
+            
+              <!-- Membership Level Selection -->
+              <label>
+                Membership Level
+                <select name="membershipLevel" required title="Select Your Membership Level">
+                  <option value="" disabled selected>Choose a membership</option>
+                  <option value="NP">NP Membership (Non-Profit, No Fee)</option>
+                  <option value="Bronze">Bronze Membership</option>
+                  <option value="Silver">Silver Membership</option>
+                  <option value="Gold">Gold Membership</option>
+                </select>
+              </label>
+              <br>
+            
+              
+            
+              <!-- Timestamp -->
+              <input type="hidden" name="timestamp" id="timestamp" value="">
+              <input id="joinbutton" type="submit" value="Subscribe">
+          </form>
+
+          <div class="card-container">
+            <div id="gold-card"><h2>Gold Membership</h2></div>
+            <div id="silverl-card"><h2>Silver Membership</h2></div>
+            <div id="bronze-card"><h2>Bronze Membership</h2></div>
+            <div id="nonprofit-card"><h2>Non-Profit Membership</h2></div>
+          </div>
+        </div>
+    
+        <dialog id="details">
+            <div>
+                <h2 id="modalTiltle"></h2>
+                <button id="closeModal">X</button>
+            </div>
+            <p id="modalDescription"></p>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p id="footer-title">Savage Beast</p>
+            <p>Quito-Ecuador</p>
+            <p>info@savage-beast.org</p>
+            <p>+593 995168019</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" width="30"
+                    height="30"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram"
+                    width="30" height="30"></a>
+            <a href="https://x.com/?lang=es&mx=2" target="_blank"><img src="images/twitter.png" alt="X - twitter"
+                    width="30" height="30"></a>
+        </div>
+        <div class="footer-description">
+            <p>WDD231 Class Project</p>
+            <p><span id="currentyear"></span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

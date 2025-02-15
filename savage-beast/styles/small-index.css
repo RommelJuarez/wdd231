@@ -1,0 +1,25 @@
+@media (max-width:750px) {
+    .cards-container {
+        flex-direction: column;
+        align-content: center;
+    }
+    .card{
+        width: 80%;
+        align-self: center;
+    }
+    h1{
+        font-size: 2.3em;
+        padding: 0 4%;
+    }
+
+    footer{
+        gap: 20px;
+        
+    }
+    .button{
+        margin-top: 35%;
+    }
+    .divider{
+        padding-top: 190px;
+    }
+}

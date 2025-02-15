@@ -1,0 +1,120 @@
+
+main{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 200px 0 100px;
+    color: aliceblue;
+}
+h1{
+    font-size: 3.3em;
+}
+.button {
+    margin-top: 5%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #7c1279; 
+    color: white;
+    font-size: 20px;
+    
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #ae0b26; 
+    transform: scale(1.05); 
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+    opacity: 0;
+    margin: 15% 0 3%;
+}
+.cards-container.show{
+    
+    transform: translateY(30px);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.card {
+    align-content: center;
+    width: 40%;
+    height: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.divider {
+    padding-top: 300px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    margin: 0 auto; 
+}
+
+.divider::before,
+.divider::after {
+    content: "";    
+    flex: 1;
+    border-bottom: 1px solid #b3b2b2;
+    margin: 0 10px;
+}
+
+.divider span {
+    padding: 0 5%;
+    font-size: 1.5rem;
+    color: #9a9c98;
+    
+}
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+

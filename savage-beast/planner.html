@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rommel Juarez">
+    <meta name="description" content="Planner Page of Savage Beast Workout Planner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Planner Page of Savage Beast Workout Planner">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.app.goo.gl/v4Ei5UPvx7Pt2HQ66">
+    <meta property="og:url" content="https://rommeljuarez.github.io/wdd231/savage-beast/index.html">
+    <meta property="og:description" content="Plan your Workouts on Savage Beast">
+
+    <title>Planner | Savage Beast</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/planner.css">
+    <link rel="stylesheet" href="styles/base.css">
+    
+
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/hamburguer.js" defer></script>
+    <script type="module" src="scripts/planner-modal.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="grid1">
+            <div class="header-container-img">
+
+                <a href="index.html" class="logo-a"><img src="images/logo.png" alt="logo" class="logo"><span>SAVAGE
+                        BEAST</span></a>
+                        <button class="hamburguer-menu" id="button1" title="hamburguer-menu">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                <div class="navbar" >
+                    <a href="index.html">Home</a>
+                    <a href="planner.html" class="active">Planeer</a>
+                    <a href="joinus.html">Join Us</a>
+                    <a href="exercises.html">Exercises</a>
+                    <a href="/wdd231/siteplan.html" target="_blank">Site Plan</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="back">
+        <div class="hero-gradient"></div>
+    </div>
+
+    <main>
+        <h1>Weekly Workout Planner</h1>
+        <button class="workout">Add Task</button>
+        <button class="task">Add Workout</button>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td id="lunes" data-label="Monday"></td>
+                    <td id="martes" data-label="Tuesday"></td>
+                    <td id="miercoles" data-label="Wednesday"></td>
+                    <td id="jueves" data-label="Thursday"></td>
+                    <td id="viernes" data-label="Friday"></td>
+                    <td id="sabado" data-label="Saturday"></td>
+                    <td id="domingo" data-label="Sunday"></td>
+                </tr>
+            </tbody>
+        </table>
+        <dialog id="modal-editor">
+            <div>
+                <h2 id="modalTiltle"></h2>
+                <button id="closeModal">X</button>
+            </div>
+            <div id="modalDescription"></div>
+        </dialog>
+        
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p id="footer-title">Savage Beast</p>
+            <p>Quito-Ecuador</p>
+            <p>info@savage-beast.org</p>
+            <p>+593 995168019</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook" width="30"
+                    height="30"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram"
+                    width="30" height="30"></a>
+            <a href="https://x.com/?lang=es&mx=2" target="_blank"><img src="images/twitter.png" alt="X - twitter"
+                    width="30" height="30"></a>
+        </div>
+        <div class="footer-description">
+            <p>WDD231 Class Project</p>
+            <p><span id="currentyear"></span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
