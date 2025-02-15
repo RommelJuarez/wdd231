@@ -9,7 +9,7 @@ function cargarDatos() {
     for (let dia in datosGuardados) {
         let celda = document.getElementById(dia);
         if (celda) {
-            // Si hay elementos para ese día, renderizarlos
+            
             if (datosGuardados[dia].length > 0) {
                 celda.innerHTML = datosGuardados[dia].map((item, index) => {
                     if (item.ejercicio) {
@@ -27,7 +27,7 @@ function cargarDatos() {
                     }
                 }).join("");
             } else {
-                // Si no hay elementos, dejar la celda vacía
+                
                 celda.innerHTML = "";
             }
         }
@@ -152,15 +152,15 @@ function agregarEventosBorrar() {
             let index = e.target.dataset.index;
             let datosGuardados = JSON.parse(localStorage.getItem("planificador")) || {};
 
-            // Eliminar el elemento específico
+            
             datosGuardados[dia].splice(index, 1);
 
             
 
-            // Guardar los cambios en el localStorage
+            
             localStorage.setItem("planificador", JSON.stringify(datosGuardados));
 
-            // Recargar los datos en la interfaz
+            
             cargarDatos();
         });
     });

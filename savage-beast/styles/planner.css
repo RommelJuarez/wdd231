@@ -184,7 +184,9 @@ li strong {
     margin-right: 10px;
     cursor: pointer;
 }
-
+.today{
+    background-color: #7c12788f;
+}
 
 .borrar-item {
     background-color: #ff4d4d;
