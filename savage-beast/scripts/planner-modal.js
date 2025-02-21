@@ -92,7 +92,7 @@ document.querySelector(".workout").addEventListener("click", () => {
         </select>
 
         <label for="nota">Task:</label>
-        <input type="text" id="nota" maxlength="30">
+        <input type="text" id="nota" maxlength="45">
 
         <button id="agregarTextoBtn" class="task">Add Task</button>
     `;
